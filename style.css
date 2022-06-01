@@ -11,7 +11,15 @@ font-family: 'Oswald', sans-serif;
     margin: 0;
     padding: 0;
 }
-
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    color: #3B4050;
+}
 img{
     max-width: 100%;
 }
@@ -19,3 +27,110 @@ img{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* ------Typography------ */
+.list__item{
+    font-size: 1.6rem;
+    list-style: none;
+}
+.hero__header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9rem;
+    color: #fff;
+}
+
+.hero__text{
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+.sub__hero--header{
+    color: #A59678;
+    font-size: 3rem;
+
+}
+.sub__hero--text{
+    color: #3B4050;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.section__header{
+    color: #A59678;
+    font-size: 3.6rem;
+
+}
+.section__text{
+    font-size: 2.1rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.aside__block--title{
+    font-size: 3rem;
+    color: #fff;
+}
+.aside__block--text{
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}
+.footer__header{
+    font-size: 2.4rem;
+
+}
+.footer__sub--header{
+    font-size: 2.1rem;
+    color: #A59678;
+}
+/* ------End of Typography------ */
+
+/* ------Components------ */
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #fff;
+    background-color: #A59678;
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
+}
+.nav--btn{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #A59678;
+    padding: 0.25em 0.75em;
+    border-radius: 100px;
+    font-size: 1.6rem;
+}
+
+/* ------End of Components------ */
+
+
+/* ------General styling------ */
+.hero{
+    background-color: #3B4050;
+}
+.sub__hero{
+    background-color: #F1F1F1;
+}
+.aside__block{
+    background-color: #3B4050;
+}
+.aside__section{
+    display: flex;
+    flex-direction: column;
+}
+.aside__block{
+    padding: 1em;
+}
+.aside__block + .aside__block{
+    margin-top: 1em;
+}
+.footer{
+    margin-top: 1em;
+    background-color: #3B4050;
+}
+/* ------End of General styling------ */
