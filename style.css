@@ -32,6 +32,7 @@ img{
 .list__item{
     font-size: 1.6rem;
     list-style: none;
+    color: #fff;
 }
 .hero__header{
     font-family: 'Montserrat', sans-serif;
@@ -76,11 +77,16 @@ img{
 }
 .footer__header{
     font-size: 2.4rem;
-
+    color: #fff;
 }
 .footer__sub--header{
     font-size: 2.1rem;
     color: #A59678;
+}
+.footer__sub--text{
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
 }
 /* ------End of Typography------ */
 
@@ -110,6 +116,12 @@ img{
 
 
 /* ------General styling------ */
+header{
+    background-color: #2E323F;
+}
+.row{
+    display: flex;
+}
 .hero{
     background-color: #3B4050;
 }
