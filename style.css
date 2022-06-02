@@ -26,19 +26,30 @@ img{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    width: 80%;
+
 }
 
 /* ------Typography------ */
 .list__item{
-    font-size: 1.6rem;
     list-style: none;
-    color: #fff;
 }
+.nav__link{
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+.nav__link:hover,
+.nav__link:focus{
+    opacity: 0.6;
+}
+/* change .hero__header font size in bigger desktops */
 .hero__header{
     font-family: 'Montserrat', sans-serif;
-    font-size: 9rem;
+    font-size: 7.5rem;
     color: #fff;
 }
+
 
 .hero__text{
     font-size: 2.4rem;
@@ -101,7 +112,11 @@ img{
     padding: 0.25em 0.75em;
     border-radius: 100px;
 }
-.nav--btn{
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+.nav__link--btn{
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
@@ -119,8 +134,28 @@ img{
 header{
     background-color: #2E323F;
 }
+
+/*********** Temp nav settings: move to media queries later */
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list__item + .list__item{
+    padding-left: 1em;
+}
+.nav--secondary{
+    padding-left: 2em;
+}
+/*********** End of Temp nav settings: move to media queries later */
+
 .row{
     display: flex;
+    flex-direction: column;
 }
 .hero{
     background-color: #3B4050;
