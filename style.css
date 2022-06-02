@@ -12,7 +12,7 @@ font-family: 'Oswald', sans-serif;
     padding: 0;
 }
 html{
-    font-size: 62.5%;
+    font-size: 50%;
 }
 body{
     font-family: 'Oswald', sans-serif;
@@ -27,7 +27,6 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     width: 80%;
-
 }
 
 /* ------Typography------ */
@@ -35,7 +34,7 @@ img{
     list-style: none;
 }
 .nav__link{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #fff;
     text-decoration: none;
 }
@@ -46,7 +45,7 @@ img{
 /* change .hero__header font size in bigger desktops */
 .hero__header{
     font-family: 'Montserrat', sans-serif;
-    font-size: 7.5rem;
+    font-size: 6rem;
     color: #fff;
 }
 
@@ -87,8 +86,9 @@ img{
 
 }
 .footer__header{
-    font-size: 2.4rem;
+    font-size: 3.4rem;
     color: #fff;
+    text-align: center;
 }
 .footer__sub--header{
     font-size: 2.1rem;
@@ -97,7 +97,10 @@ img{
 .footer__sub--text{
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
-    color: #fff;
+    color: #B1B5BD;
+}
+.footer__list{
+    list-style: none;
 }
 /* ------End of Typography------ */
 
@@ -124,7 +127,7 @@ img{
     background-color: #A59678;
     padding: 0.25em 0.75em;
     border-radius: 100px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 /* ------End of Components------ */
@@ -135,10 +138,12 @@ header{
     background-color: #2E323F;
 }
 
-/*********** Temp nav settings: move to media queries later */
+/*********** Temporary nav settings: move to media queries later */
 .header__nav{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding: 1em;
 }
 .nav{
     display: flex;
@@ -151,7 +156,7 @@ header{
 .nav--secondary{
     padding-left: 2em;
 }
-/*********** End of Temp nav settings: move to media queries later */
+/*********** End of Temporary nav settings: move to media queries later */
 
 .row{
     display: flex;
@@ -159,9 +164,27 @@ header{
 }
 .hero{
     background-color: #3B4050;
+    padding: 3em 0;
+}
+.hero__text{
+    padding: 2em 0;
 }
 .sub__hero{
     background-color: #F1F1F1;
+    padding: 4em 0;
+    text-align: center;
+}
+.sub__hero--text{
+    padding: 2em 0;
+}
+.main__section{
+    padding: 3em 0;
+}
+/* .section__header{
+    padding-bottom: 0.8em;
+} */
+.section__text{
+    padding: 2em 0;
 }
 .aside__block{
     background-color: #3B4050;
@@ -171,13 +194,34 @@ header{
     flex-direction: column;
 }
 .aside__block{
-    padding: 1em;
+    padding: 3em;
+    text-align: center;
 }
 .aside__block + .aside__block{
-    margin-top: 1em;
+    margin-top: 2em;
 }
 .footer{
-    margin-top: 1em;
+    padding: 4em 0;
     background-color: #3B4050;
+}
+.footer__header{
+    padding-bottom: 1em;
+}
+.footer__sub{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.footer__about{
+    width: 100%;
+    padding-bottom: 3em;
+}
+.footer__extra{
+    /* padding-left: 1em; */
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 /* ------End of General styling------ */
