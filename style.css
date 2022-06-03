@@ -19,6 +19,7 @@ body{
 }
 p{
     color: #3B4050;
+    line-height: 40px;
 }
 img{
     max-width: 100%;
@@ -101,6 +102,7 @@ img{
 }
 .footer__list{
     list-style: none;
+    line-height: 50px;
 }
 /* ------End of Typography------ */
 
@@ -141,9 +143,13 @@ header{
 /*********** Temporary nav settings: move to media queries later */
 .header__nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1em;
+}
+.logo{
+    width: 100%;
+    align-self: center;
 }
 .nav{
     display: flex;
@@ -164,21 +170,23 @@ header{
 }
 .hero{
     background-color: #3B4050;
-    padding: 3em 0;
+    padding: 7em 0;
 }
 .hero__text{
     padding: 2em 0;
 }
 .sub__hero{
     background-color: #F1F1F1;
-    padding: 4em 0;
+    padding: 7em 0;
     text-align: center;
 }
 .sub__hero--text{
     padding: 2em 0;
 }
 .main__section{
-    padding: 3em 0;
+    padding: 7em 0;
+    display: flex;
+    flex-direction: column;
 }
 /* .section__header{
     padding-bottom: 0.8em;
@@ -188,17 +196,17 @@ header{
 }
 .aside__block{
     background-color: #3B4050;
+    padding: 3em;
+    text-align: center;
+    width: 100%;
+}
+.aside__block + .aside__block{
+    margin-top: 4em;
 }
 .aside__section{
     display: flex;
     flex-direction: column;
-}
-.aside__block{
-    padding: 3em;
-    text-align: center;
-}
-.aside__block + .aside__block{
-    margin-top: 2em;
+    margin: 3em 0;
 }
 .footer{
     padding: 4em 0;
@@ -225,3 +233,83 @@ header{
     flex-wrap: wrap;
 }
 /* ------End of General styling------ */
+
+
+/* ------Media Queries------ */
+
+@media (min-width: 700px){
+
+    html{
+        font-size: 60%;
+    }
+    .hero{
+        padding: 9em 0;
+    }
+    .hero__sub{
+        align-self: flex-end;
+    }
+    .hero__header,
+    .hero__sub{
+        width: 100%;
+    }
+    .hero__sub{
+        margin-left: 4em;
+    }
+    .row{
+        flex-direction: row;
+    }
+    .aside__section{
+        flex-direction: row;
+    }
+    .aside__block + .aside__block{
+        margin-left: 2em;
+        margin-top: 0;
+    }
+    .sub__hero--block + .sub__hero--block{
+        margin-left: 3em;
+    }
+}
+
+@media (min-width: 1000px){
+    html{
+        font-size: 62.5%;
+    }
+    .hero__header{
+        font-size: 9rem;
+    }
+    .hero__text{
+        font-size: 2.4rem;
+    }
+    .hero--btn{
+        font-size: 2.4rem;
+    }
+    .main__section{
+        flex-direction: row;
+    }
+    .main__section--block{
+        width: 60%;
+    }
+    .aside__section{
+        width: 35%;
+    }
+    .aside__section{
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 6em;
+    }
+    .aside__block + .aside__block{
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .footer__sub{
+        flex-direction: row;
+    }
+    .footer__about{
+        width: 50%;
+    }
+    .footer__extra{
+        width: 40%;
+    }
+    
+}
+/* ------End of Media Queries------ */
