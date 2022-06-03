@@ -219,15 +219,12 @@ header{
     display: flex;
     margin: 0 auto;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 .footer__about{
     width: 100%;
     padding-bottom: 3em;
 }
 .footer__extra{
-    /* padding-left: 1em; */
-    /* width: 60%; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
