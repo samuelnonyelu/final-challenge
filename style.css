@@ -303,6 +303,7 @@ header{
     }
     .footer__sub{
         flex-direction: row;
+        justify-content: space-between;
     }
     .footer__about{
         width: 50%;
