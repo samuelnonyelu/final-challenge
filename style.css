@@ -100,6 +100,11 @@ img{
     font-size: 1.6rem;
     font-family: 'Montserrat', sans-serif;
     color: #B1B5BD;
+    text-decoration: none;
+}
+.footer__sub--text:hover,
+.footer__sub--text:focus{
+    opacity: 0.6;
 }
 .footer__list{
     list-style: none;
@@ -126,7 +131,7 @@ img{
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    color: #fff;
+    /* color: #fff; */
     background-color: #A59678;
     padding: 0.25em 0.75em;
     border-radius: 100px;
@@ -158,7 +163,7 @@ header{
     align-items: center;
 }
 .list__item + .list__item{
-    padding-left: 1em;
+    padding-top: 2em;
 }
 .nav--secondary{
     padding-left: 2em;
@@ -239,7 +244,7 @@ header{
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #F1F1F1;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -247,15 +252,21 @@ header{
     box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
 }
-
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
 .nav-menu.active {
     left: 0;
 }
-
-.list-item {
-    margin: 2.5rem 0;
+.nav__link{
+    color: #3B4050;
 }
-
+.nav__link--btn{
+    color: #FFF;
+}
 .hamburger {
     display: block;
     cursor: pointer;
@@ -288,17 +299,14 @@ header{
 @media (min-width: 700px){
 
  /* ------------temp meassure------------ */
+    
+
     .hamburger {
         display: none;
     }
-
-    
-    .nav-menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
+    /* .nav-menu{
+        position: absolute;
+    } */
     .nav-item {
         margin-left: 5rem;
     }
@@ -313,11 +321,11 @@ header{
         color: #482ff7;
     }
 
-    .nav-logo {
+    /* .nav-logo {
         font-size: 2.1rem;
         font-weight: 500;
         color: #482ff7;
-    }
+    } */
 /* -------------end of temp measure---------------- */
 
     html{
@@ -354,9 +362,11 @@ header{
 }
 
 @media (min-width: 1000px){
+    
     html{
         font-size: 62.5%;
     }
+    
     .hero__header{
         font-size: 8rem;
     }
@@ -364,7 +374,7 @@ header{
         font-size: 2.2rem;
     }
     .hero--btn{
-        font-size: 2.1  rem;
+        font-size: 2.1rem;
     }
     .main__section{
         flex-direction: row;
