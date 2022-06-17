@@ -152,6 +152,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding: 1em;
+    background-color: #2E323F;
 }
 .logo{
     width: 100%;
@@ -163,11 +164,11 @@ header{
     align-items: center;
 }
 .list__item + .list__item{
-    padding-top: 2em;
+    padding-top: 4em;
 }
-.nav--secondary{
+/* .nav--secondary{
     padding-left: 2em;
-}
+} */
 /*********** End of Temporary nav settings: move to media queries later */
 
 .row{
@@ -239,12 +240,17 @@ header{
 
 
 /* --------------Hamburger test----------------- */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #F1F1F1;
+    background-color: #dbdada;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -256,7 +262,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 6em;
 }
 .nav-menu.active {
     left: 0;
