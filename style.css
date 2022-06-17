@@ -131,7 +131,7 @@ img{
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    /* color: #fff; */
+    color: #fff;
     background-color: #A59678;
     padding: 0.25em 0.75em;
     border-radius: 100px;
@@ -145,8 +145,6 @@ img{
 header{
     background-color: #2E323F;
 }
-
-/*********** Temporary nav settings: move to media queries later */
 .header__nav{
     display: flex;
     flex-direction: row;
@@ -166,11 +164,6 @@ header{
 .list__item + .list__item{
     padding-top: 4em;
 }
-/* .nav--secondary{
-    padding-left: 2em;
-} */
-/*********** End of Temporary nav settings: move to media queries later */
-
 .row{
     display: flex;
     flex-direction: column;
@@ -195,9 +188,6 @@ header{
     display: flex;
     flex-direction: column;
 }
-/* .section__header{
-    padding-bottom: 0.8em;
-} */
 .section__text{
     padding: 2em 0;
 }
@@ -239,7 +229,7 @@ header{
 /* ------End of General styling------ */
 
 
-/* --------------Hamburger test----------------- */
+/* --------------Hamburger Menu styling (what a nightmare)----------------- */
 
 .nav-menu {
     position: fixed;
@@ -266,6 +256,7 @@ header{
 .nav__link{
     color: #3B4050;
 }
+
 .nav__link--btn{
     color: #FFF;
 }
@@ -293,42 +284,12 @@ header{
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-/* -------------- end Hamburger test------------ */
+/* -------------- End Hamburger menu styling------------ */
 
 
 /* ------Media Queries------ */
 
 @media (min-width: 700px){
-
- /* ------------temp meassure------------ */
-    
-
-    .hamburger {
-        display: none;
-    }
-    /* .nav-menu{
-        position: absolute;
-    } */
-    .nav-item {
-        margin-left: 5rem;
-    }
-
-    .nav__link{
-        font-size: 1.6rem;
-        font-weight: 400;
-        color: #475569;
-    }
-
-    .nav__link:hover{
-        color: #482ff7;
-    }
-
-    /* .nav-logo {
-        font-size: 2.1rem;
-        font-weight: 500;
-        color: #482ff7;
-    } */
-/* -------------end of temp measure---------------- */
 
     html{
         font-size: 60%;
@@ -359,7 +320,31 @@ header{
     .sub__hero--block + .sub__hero--block{
         margin-left: 3em;
     }
-
+    .hamburger {
+        display: none;
+    }
+    .nav-menu {
+        position: static;
+        display: flex;
+        left: 0;
+        top: 0;
+        flex-direction: row;
+        background: none;
+        text-align: center;
+        padding: 0;
+    }
+    .list__item + .list__item{
+        padding-top: 0;
+        padding-left: 2em;
+    }
+    .nav-item {
+        margin-left: 5rem;
+    }
+    .nav__link{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #FFF;
+    }
    
 }
 
