@@ -240,11 +240,7 @@ header{
 
 
 /* --------------Hamburger test----------------- */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+
 .nav-menu {
     position: fixed;
     left: -100%;
