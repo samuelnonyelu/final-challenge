@@ -24,16 +24,18 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
 // jquery to make the navbar stick to the top
 
+
 $(window).scroll(function () {
-    if($(window).scrollTop() > 400) {
+    if($(window).scrollTop() > 300) {
       $('.header--sticky').css('position', 'sticky');
+      $('.header--sticky').css('position', '-webkit-sticky');
       $('.header--sticky').css('top', 0);
       $('.header__nav').css("opacity", 0.9);
     } else {
-         $('.header__nav').css('position', '');
-    //   $('.header__nav').css('top', '-100%');
-      $('.header__nav').css("opacity", 1);
+        $('.header--sticky').css('position', '');
+        $('.header__nav').css("opacity", 1);
     }
   })

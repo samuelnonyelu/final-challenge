@@ -157,10 +157,12 @@ header{
     justify-content: space-between;
     padding: 1em;
     background-color: #2E323F;
-    transition: all 0.5s;
+    /* transition: all 5s; */
 
 }
-
+.header--sticky{
+    transition: all 5s;
+}
 .logo{
     width: 100%;
     align-self: center;
